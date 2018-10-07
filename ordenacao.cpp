@@ -219,27 +219,27 @@ void cria_crescente(int *vet, int tam){
 }
 
 void cria_decrescente(int *vet, int tam){
-	for(int i = tam-1; i >= 0; i++){
-		vet[i] = i+1;
+	for(int i = tam-1; i >= 0; i--){
+		vet[i] = tam-i;
 	}
 }
 
 int main(){
     int n = 10, *el = new int[10000000];
+	int tipo = 1;
     clock_t Ticks[2];
-
-	/*for(int i = 0; i < n; i++){
-		cout << el[i] << endl;
-	}*/
 
 	//SELECTION SORT
 	for(int j = 0; j < 5; j++){
 		cout << "Tamanho da entrada: " << n << endl;
 		for(int i = 1; i < 11; i++){
 			
-			ler_arquivo(el,n);
-			//cria_crescente(el,n);
-			//cria_decrescente(el,n);
+			if(tipo == 1)
+				ler_arquivo(el,n);
+			else if(tipo == 2)
+				cria_crescente(el,n);
+			else
+				cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			selection_sort(el,n);
@@ -261,9 +261,12 @@ int main(){
 		cout << "Tamanho da entrada: " << n << endl;
 		for(int i = 1; i < 11; i++){
 			
-			ler_arquivo(el,n);
-			//cria_crescente(el,n);
-			//cria_decrescente(el,n);
+			if(tipo == 1)
+				ler_arquivo(el,n);
+			else if(tipo == 2)
+				cria_crescente(el,n);
+			else
+				cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			insertion_sort(el,n);
@@ -285,9 +288,12 @@ int main(){
 		cout << "Tamanho da entrada: " << n << endl;
 		for(int i = 1; i < 11; i++){
 			
-			ler_arquivo(el,n);
-			//cria_crescente(el,n);
-			//cria_decrescente(el,n);
+			if(tipo == 1)
+				ler_arquivo(el,n);
+			else if(tipo == 2)
+				cria_crescente(el,n);
+			else
+				cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			shell_sort(el,n);
@@ -309,9 +315,12 @@ int main(){
 		cout << "Tamanho da entrada: " << n << endl;
 		for(int i = 1; i < 11; i++){
 			
-			ler_arquivo(el,n);
-			//cria_crescente(el,n);
-			//cria_decrescente(el,n);
+			if(tipo == 1)
+				ler_arquivo(el,n);
+			else if(tipo == 2)
+				cria_crescente(el,n);
+			else
+				cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			merge_sort(el,n);
@@ -333,9 +342,12 @@ int main(){
 		cout << "Tamanho da entrada: " << n << endl;
 		for(int i = 1; i < 11; i++){
 			
-			ler_arquivo(el,n);
-			//cria_crescente(el,n);
-			//cria_decrescente(el,n);
+			if(tipo == 1)
+				ler_arquivo(el,n);
+			else if(tipo == 2)
+				cria_crescente(el,n);
+			else
+				cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			heap_sort(el,n);
@@ -357,9 +369,12 @@ int main(){
 		cout << "Tamanho da entrada: " << n << endl;
 		for(int i = 1; i < 11; i++){
 			
-			ler_arquivo(el,n);
-			//cria_crescente(el,n);
-			//cria_decrescente(el,n);
+			if(tipo == 1)
+				ler_arquivo(el,n);
+			else if(tipo == 2)
+				cria_crescente(el,n);
+			else
+				cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			quick_sort(el,0,n);
@@ -381,9 +396,12 @@ int main(){
 		cout << "Tamanho da entrada: " << n << endl;
 		for(int i = 1; i < 11; i++){
 			
-			ler_arquivo(el,n);
-			//cria_crescente(el,n);
-			//cria_decrescente(el,n);
+			if(tipo == 1)
+				ler_arquivo(el,n);
+			else if(tipo == 2)
+				cria_crescente(el,n);
+			else
+				cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			quick_sort_mediana(el,0,n);
