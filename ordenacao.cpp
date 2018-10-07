@@ -238,6 +238,8 @@ int main(){
 		for(int i = 1; i < 11; i++){
 			
 			ler_arquivo(el,n);
+			//cria_crescente(el,n);
+			//cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			selection_sort(el,n);
@@ -260,6 +262,8 @@ int main(){
 		for(int i = 1; i < 11; i++){
 			
 			ler_arquivo(el,n);
+			//cria_crescente(el,n);
+			//cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			insertion_sort(el,n);
@@ -282,6 +286,8 @@ int main(){
 		for(int i = 1; i < 11; i++){
 			
 			ler_arquivo(el,n);
+			//cria_crescente(el,n);
+			//cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			shell_sort(el,n);
@@ -304,6 +310,8 @@ int main(){
 		for(int i = 1; i < 11; i++){
 			
 			ler_arquivo(el,n);
+			//cria_crescente(el,n);
+			//cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			merge_sort(el,n);
@@ -326,6 +334,8 @@ int main(){
 		for(int i = 1; i < 11; i++){
 			
 			ler_arquivo(el,n);
+			//cria_crescente(el,n);
+			//cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			heap_sort(el,n);
@@ -348,6 +358,8 @@ int main(){
 		for(int i = 1; i < 11; i++){
 			
 			ler_arquivo(el,n);
+			//cria_crescente(el,n);
+			//cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			quick_sort(el,0,n);
@@ -370,12 +382,14 @@ int main(){
 		for(int i = 1; i < 11; i++){
 			
 			ler_arquivo(el,n);
+			//cria_crescente(el,n);
+			//cria_decrescente(el,n);
 
 			Ticks[0] = clock();
 			quick_sort_mediana(el,0,n);
 			Ticks[1] = clock();
 
-			cout << "Teste " << i << " - QUICK SORT MEDIANA";
+			cout << "Teste " << i << " - QUICK SORT MEDIANA ";
 			cout << "Tempo gasto: " << (Ticks[1] - Ticks[0]) * 1000.0 / CLOCKS_PER_SEC << " em ms" << endl;
 			cout << endl;
 		}
@@ -384,5 +398,7 @@ int main(){
 		else
 			n*=10;
 	}
+
+	delete [] el;
     return 0;
 }
