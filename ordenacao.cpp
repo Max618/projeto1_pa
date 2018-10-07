@@ -225,7 +225,7 @@ void cria_decrescente(int *vet, int tam){
 }
 
 int main(){
-    int n = 100, *el = new int[10000000];
+    int n = 10, *el = new int[10000000];
     clock_t Ticks[2];
 
 	/*for(int i = 0; i < n; i++){
@@ -233,7 +233,7 @@ int main(){
 	}*/
 
 	//SELECTION SORT
-	for(int j = 0; j < 4; j++){
+	for(int j = 0; j < 5; j++){
 		cout << "Tamanho da entrada: " << n << endl;
 		for(int i = 1; i < 11; i++){
 			
@@ -252,7 +252,7 @@ int main(){
 		else
 			n*=10;
 	}
-	n = 100;
+	n = 10;
 
 	//INSERTION SORT
 	for(int j = 0; j < 5; j++){
@@ -274,7 +274,7 @@ int main(){
 		else
 			n*=10;
 	}
-	n = 100;
+	n = 10;
 
 	//SHEL SORT
 	for(int j = 0; j < 5; j++){
@@ -296,7 +296,7 @@ int main(){
 		else
 			n*=10;
 	}
-	n = 100;
+	n = 10;
 
 	//MERGE SORT
 	for(int j = 0; j < 5; j++){
@@ -318,7 +318,7 @@ int main(){
 		else
 			n*=10;
 	}
-	n = 100;
+	n = 10;
 
 	//HEAP SORT
 	for(int j = 0; j < 5; j++){
@@ -340,7 +340,7 @@ int main(){
 		else
 			n*=10;
 	}
-	n = 100;
+	n = 10;
 
 	//QUICK SORT
 	for(int j = 0; j < 5; j++){
@@ -362,7 +362,7 @@ int main(){
 		else
 			n*=10;
 	}
-	n = 100;
+	n = 10;
 
 	//QUICK SORT - MEDIANA
 	for(int j = 0; j < 5; j++){
